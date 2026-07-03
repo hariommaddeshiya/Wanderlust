@@ -82,9 +82,9 @@ app.use("/listings/:id/reviews", reviews);
 app.use("/", users);
 
 
-// app.get("/", (req,res)=>{
-//     res.send("Server is working!");
-// });
+app.get("/", (req,res)=>{
+    res.redirect("/listings");
+});
 
 
 //According to New version 
